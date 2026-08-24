@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex — Software Engineer",
+  title: "ACCP — Software Engineer",
   description:
-    "Portfolio of Alex, a Software Engineer specializing in React, Next.js, TypeScript, and AI-powered applications.",
+    "Portfolio of Aye Cho Cho pyone, a Software Engineer specializing in React, Next.js, TypeScript, and AI-powered applications.",
   keywords: [
-    "Alex",
+    "Aye Cho Cho Pyone",
     "Software Engineer",
     "Frontend Developer",
     "Full-Stack Developer",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     "TypeScript",
     "AI Development",
   ],
-  authors: [{ name: "Alex" }],
+  authors: [{ name: "Aye Cho Cho Pyone" }],
   openGraph: {
-    title: "Alex — Software Engineer",
+    title: "ACCP — Software Engineer",
     description:
       "Building modern web experiences and AI-powered solutions with React, Next.js, and TypeScript.",
     type: "website",
