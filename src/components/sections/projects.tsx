@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 
 export function Projects() {
   return (
-    <section id="projects" className="relative py-24 sm:py-32">
+    <section id="projects" className="relative py-10 sm:py-18">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Featured Projects"
@@ -31,6 +31,9 @@ export function Projects() {
 
                 <div className="flex flex-col gap-2">
                   <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
+                  <p className="font-mono text-xs font-medium tracking-wide text-primary">
+                    {project.company} · {project.role}
+                  </p>
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {project.description}
                   </p>

@@ -17,7 +17,7 @@ const highlightIcons = [Blocks, Database, Sparkles, Gauge, Bot, Workflow];
 
 export function AiSection() {
   return (
-    <section id="ai" className="relative py-24 sm:py-32">
+    <section id="ai" className="relative py-10 sm:py-18">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-1/2 -z-10 h-[36rem] -translate-y-1/2 bg-gradient-to-b from-primary/10 via-transparent to-transparent blur-3xl"

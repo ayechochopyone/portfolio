@@ -16,7 +16,7 @@ const icons: Record<string, typeof Code2> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-24 sm:py-32">
+    <section id="skills" className="relative py-10 sm:py-18">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Skills"

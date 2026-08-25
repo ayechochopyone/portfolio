@@ -9,7 +9,7 @@ const icons = [Code2, Bot, Users, Sparkles, RefreshCw];
 
 export function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32">
+    <section id="about" className="relative py-10 sm:py-18">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
           <div className="flex flex-col gap-6">

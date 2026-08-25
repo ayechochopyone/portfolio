@@ -29,7 +29,7 @@ const contactCards = [
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-24 sm:py-32">
+    <section id="contact" className="relative py-10 sm:py-18">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-72 bg-gradient-to-t from-primary/10 to-transparent"

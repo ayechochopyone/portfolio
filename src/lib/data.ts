@@ -76,37 +76,40 @@ export const skillGroups = [
 
 export const experience = [
   {
-    company: "GIC Myanmar",
+    company: "GIC Myanmar Co., Ltd.",
     role: "Web Developer",
     period: "January 2025 – Present",
-    points: [
-      "Engineered a responsive and accessible AI chatbot interface for MyAI using Next.js, Tailwind CSS, and shadcn/ui.",
-      "Developed reusable UI components for a consistent user experience.",
-      "Integrated AWS Lambda APIs for chatbot interactions.",
-      "Implemented dynamic QR code generation for social sharing.",
-      "Developed a comprehensive HR solution for workforce management and payroll automation.",
-      "Developed the backend for a six-member team using Node.js and Express.",
-      "Developed a web-based Employee Management System using Laravel and MySQL.",
-      "Used Claude and prompt engineering to accelerate architectural planning, database schema design, and complex feature implementation.",
+    companyOverview:
+      "GIC Myanmar Co., Ltd. is an IT services and offshore development company within the Global Innovation Consulting (GIC) Group. The company provides system development, IT services, engineering resources, and education services, supporting Japan–Myanmar offshore and hybrid development teams.",
+    responsibilities: [
+      "Developed responsive and accessible web applications.",
+      "Built reusable UI components.",
+      "Worked with modern frontend technologies including Next.js, Tailwind CSS, and shadcn/ui.",
+      "Worked with Laravel and MySQL for web-based business systems.",
+      "Used Claude and prompt engineering to support architectural planning, database schema design, and complex feature implementation.",
+      "Worked with AWS services for application/API integration.",
     ],
   },
   {
-    company: "AGB Communication Co., Ltd",
+    company: "AGB Communication Co., Ltd.",
     role: "Backend Developer Intern",
     period: "April 2024 – June 2024",
-    points: [
-      "Developed a responsive e-learning website with role-based features for users and administrators.",
-      "Worked as part of a four-person team.",
-      "Used React, Tailwind CSS, Laravel, and MySQL.",
+    companyOverview:
+      "AGB Communication Co., Ltd. is a Myanmar-owned technology and telecommunications company established in 2014. The company provides Internet services, network connectivity, data center infrastructure, and IT solutions.",
+    responsibilities: [
+      "Contributed to web application development.",
+      "Worked with React and Tailwind CSS.",
+      "Worked with Laravel and MySQL.",
+      "Contributed to responsive web development and role-based functionality.",
     ],
   },
 ] as const;
 
 export const aiProject = {
-  title: "AI Project Email Analyzer & Engineer Recommendation Chatbot",
+  title: "Employee Management System",
   description:
-    "Developed an AI-powered chatbot that reviews project emails, identifies key technical requirements, and suggests the best-matched engineers from an internal team.",
-  tech: ["Microsoft Copilot Studio", "Power Automate", "AI", "Prompt Engineering"],
+    "Developed an Employee Management System with the support of Claude AI, using structured prompts to design and implement employee management, meeting scheduling, and HR-related features.",
+  tech: ["Claud" , "Prompt Engineering"],
 };
 
 export const aiHighlights = [
@@ -120,34 +123,74 @@ export const aiHighlights = [
 
 export const projects = [
   {
-    title: "MyAI Chatbot Interface",
-    description: "An accessible and responsive AI chatbot interface designed for MyAI.",
-    tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "AWS Lambda"],
+    title: "QuizBox",
+    company: "GIC Myanmar",
+    role: "Web Developer",
+    description: "An interactive online quiz platform designed to increase users’ motivation to learn through dynamic quizzes. Users can participate in quizzes and track their scores, while administrators can create, manage, and analyze quiz content.",
+    tech: ["React.js", "Tailwind CSS", "shadcn/ui", "Laravel", "MySQL"],
+    highlights: [
+      "Reusable UI components",
+      "Responsive design",
+    ],
+  },  
+  {
+    title: "Sales Support Chatbot Type",
+    company: "GIC Myanmar",
+    role: "Low Code Developer",
+    description:
+      "An AI-powered chatbot that analyzes project emails, identifies technical requirements, and recommends suitable engineers from an internal team.",
+    tech: ["Microsoft Copilot Studio", "Power Automate"],
+    highlights: [],
+  },
+   {
+    title: "Checklist ChatBot – Self-Introduction",
+    company: "GIC Myanmar",
+    role: "Low Code Developer",
+    description:
+      "An AI-powered chatbot designed to collect user information and automatically generate personalized self-introduction messages. The system receives user input and validates it against predefined checklist items such as name, age, and occupation. When required information is missing, the chatbot interactively prompts the user to provide only the missing details. Once all required information is completed, the system uses AI prompting to generate a natural and appropriate self-introduction based on the collected information.",
+    tech: ["Microsoft Copilot Studio"],
+    highlights: [],
+  },
+  {
+    title: "AI Clone",
+    company: "GIC Myanmar",
+    role: "Frontend Developer",
+    description: "An AI-powered digital clone application that enables real-time human-AI interaction by integrating D-ID for realistic avatar animation and ElevenLabs for voice cloning. The system also includes an AI knowledge base for providing company information and tier-based access control with free-user time limits and promotional-code authentication.",
+    tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "D-ID", "ElevenLabs", "Laravel", "MySQL" ],
     highlights: [
       "Reusable UI components",
       "Responsive design",
       "Accessibility",
       "AWS API integration",
-      "Dynamic QR code generation",
     ],
   },
   {
-    title: "AI Project Email Analyzer",
-    description:
-      "An AI-powered chatbot that analyzes project emails, identifies technical requirements, and recommends suitable engineers from an internal team.",
-    tech: ["Microsoft Copilot Studio", "Power Automate", "AI"],
-    highlights: [],
+    title: "My AI",
+    company: "GIC Myanmar",
+    role: "Frontend Developer",
+    description: "MyAI is a next-generation social platform that connects AI with real-world interactions. Users can create and interact with custom AI chatbots through a messaging interface, while QR code scanning enables them to share and exchange their digital AI entities in the real world.",
+    tech: ["Next.js", "Tailwind CSS", "shadcn/ui","AWS Lambda", "DynamoDB", "Laravel", "MySQL" ],
+    highlights: [
+      "Reusable UI components",
+      "Responsive design",
+      "Accessibility",
+      "AWS API integration",
+    ],
   },
   {
     title: "Employee Management System",
+    company: "GIC Myanmar",
+    role: "Prompt",
     description:
       "A web-based HR system designed to centralize employee management and streamline workforce operations.",
     tech: ["Laravel", "MySQL", "Claude", "Prompt Engineering"],
     highlights: [],
   },
   {
-    title: "E-Learning Platform",
-    description: "A responsive e-learning platform with role-based access for users and administrators.",
+    title: "Staff Attendance & Payroll Management System",
+    company: "AGB Communication Co., Ltd.",
+    role: "Backend Developer Intern",
+    description: "Monitors employees’ entry/exit status, manages leave applications, and automatically calculates salaries based on attendance data.",
     tech: ["React", "Tailwind CSS", "Laravel", "MySQL"],
     highlights: [],
   },
