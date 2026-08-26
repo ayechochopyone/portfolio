@@ -7,8 +7,8 @@ export const siteConfig = {
   location: "Yangon, Myanmar",
   email: "ayechopyone92@gmail.com",
   phone: "09965104442",
-  resumeUrl: "/ACCP_CV.pdf",
-  profileImage: "/profile.jpg",
+  resumeUrl: "/portfolio/ACCP_CV.pdf",
+  profileImage: "/portfolio/profile.jpg",
   nav: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
