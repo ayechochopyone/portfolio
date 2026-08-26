@@ -16,9 +16,9 @@ export function About() {
             <SectionHeading
               eyebrow="About Me"
               title={`Hi, I'm ${siteConfig.name}`}
-              className="lg:sticky lg:top-28"
+              //className="lg:top-28"
             />
-            <Reveal delay={0.1} className="flex flex-col gap-4 text-muted-foreground lg:sticky lg:top-56">
+            <Reveal delay={0.1} className="flex flex-col gap-4 text-muted-foreground ">
               <p className="text-base leading-relaxed sm:text-lg">
                 I&apos;m a Software Engineer passionate about frontend development, modern
                 web technologies, and AI-powered applications. I enjoy turning complex

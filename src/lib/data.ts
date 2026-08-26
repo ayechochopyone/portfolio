@@ -7,6 +7,8 @@ export const siteConfig = {
   location: "Yangon, Myanmar",
   email: "ayechopyone92@gmail.com",
   phone: "09965104442",
+  resumeUrl: "/ACCP_CV.pdf",
+  profileImage: "/profile.jpg",
   nav: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
@@ -38,11 +40,6 @@ export const aboutHighlights = [
     title: "Problem Solving",
     description:
       "Breaking down complex requirements into clean, maintainable technical solutions.",
-  },
-  {
-    title: "Continuous Learning",
-    description:
-      "Constantly sharpening frontend skills and exploring AI-assisted development practices.",
   },
 ];
 
@@ -198,7 +195,7 @@ export const projects = [
 
 export const education = {
   school: "University of Computer Studies (Maubin)",
-  degree: "Bachelor of Computer Science",
+  degree: "Bachelor of Computer Science (Hons:)",
   period: "2016 – 2024",
 };
 

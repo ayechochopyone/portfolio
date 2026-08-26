@@ -46,12 +46,12 @@ export function Contact() {
             I&apos;m open to new opportunities and collaborations. Reach out and let&apos;s
             talk about how I can help.
           </p>
-          <Button size="lg" asChild className="mt-8">
+          {/* <Button size="lg" asChild className="mt-8">
             <a href={`mailto:${siteConfig.email}`}>
               Say Hello
               <ArrowUpRight className="size-4" />
             </a>
-          </Button>
+          </Button> */}
         </Reveal>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-3">

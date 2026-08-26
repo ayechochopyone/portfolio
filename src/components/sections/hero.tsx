@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { siteConfig } from "@/lib/data";
@@ -35,10 +36,33 @@ export function Hero() {
       />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 12, scale: 0.94 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="relative mb-6"
+        >
+          <div
+            aria-hidden
+            className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-fuchsia-500 opacity-70 blur-xl"
+          />
+          <div className="relative rounded-full bg-gradient-to-br from-primary to-fuchsia-500 p-1">
+            <Image
+              src={siteConfig.profileImage}
+              alt={`Portrait of ${siteConfig.name}`}
+              width={150}
+              height={150}
+              unoptimized
+              priority
+              className="size-30 rounded-full border-4 border-background object-cover shadow-xl sm:size-40"
+            />
+          </div>
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-sm text-muted-foreground shadow-sm"
         >
           <span className="relative flex size-2">
@@ -52,7 +76,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl"
+          className="text-2xl font-semibold tracking-tight text-balance sm:text-4xl lg:text-4xl"
         >
           Hi, I&apos;m{" "}
           <span className="text-gradient bg-[length:200%_auto] animate-[shine_6s_linear_infinite]">
@@ -73,7 +97,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-6 max-w-3xl text-2xl font-medium text-balance text-foreground/90 sm:text-3xl"
+          className="mt-6 max-w-3xl text-xl font-medium text-balance text-foreground/90 sm:text-2xl"
         >
           {siteConfig.headline}
         </motion.h2>
@@ -114,6 +138,12 @@ export function Hero() {
               }}
             >
               Contact Me
+            </a>
+          </Button>
+          <Button size="lg" variant="ghost" asChild>
+            <a href={siteConfig.resumeUrl} download>
+              Download CV
+              <Download className="size-4" />
             </a>
           </Button>
         </motion.div>
